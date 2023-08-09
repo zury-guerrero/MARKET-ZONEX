@@ -1,0 +1,92 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>MARKET_PLACE</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="cerrar.png" />
+    <None Remove="Imagenes\CreaCuenta\Ayuda.jpg" />
+    <None Remove="Imagenes\CreaCuenta\Info.jpg" />
+    <None Remove="Imagenes\CreaCuenta\Usuarios.jpg" />
+    <None Remove="Imagenes\Login\login.png" />
+    <None Remove="Imagenes\Principal\Carrito.jpg" />
+    <None Remove="Imagenes\Principal\Vendedor.jpeg" />
+    <None Remove="Vistas\Agregarimagen.png" />
+    <None Remove="Vistas\Ayudanuevo.png" />
+    <None Remove="Vistas\Carrito.png" />
+    <None Remove="Vistas\cerrar.png" />
+    <None Remove="Vistas\configuracion.png" />
+    <None Remove="Vistas\Creausuario.png" />
+    <None Remove="Vistas\Home.png" />
+    <None Remove="Vistas\info.png" />
+    <None Remove="Vistas\Lmarketr.png" />
+    <None Remove="Vistas\Logour.png" />
+
+    <None Remove="Vistas\Menu.png" />
+    <None Remove="Vistas\mini.png" />
+    <None Remove="Vistas\nuevop.jpg" />
+    <None Remove="Vistas\nuevoproducto.png" />
+    <None Remove="Vistas\poder.png" />
+    <None Remove="Vistas\Rgresar.png" />
+    <None Remove="Vistas\Vender.png" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="cerrar.png" />
+    <EmbeddedResource Include="Imagenes\CreaCuenta\Ayuda.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\CreaCuenta\Info.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\CreaCuenta\Usuarios.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Login\login.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Principal\Carrito.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Principal\Vendedor.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Resource Include="Vistas\Agregarimagen.png" />
+    <Resource Include="Vistas\Ayudanuevo.png" />
+    <Resource Include="Vistas\Carrito.png" />
+    <Resource Include="Vistas\cerrar.png" />
+    <Resource Include="Vistas\configuracion.png" />
+    <Resource Include="Vistas\Creausuario.png" />
+    <Resource Include="Vistas\Home.png" />
+    <Resource Include="Vistas\info.png" />
+    <Resource Include="Vistas\Lmarketr.png" />
+    <Resource Include="Vistas\Logour.png" />
+
+    <Resource Include="Vistas\Menu.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Vistas\mini.png" />
+    <Resource Include="Vistas\nuevop.jpg" />
+    <Resource Include="Vistas\nuevoproducto.png" />
+    <Resource Include="Vistas\poder.png" />
+    <Resource Include="Vistas\Rgresar.png" />
+    <Resource Include="Vistas\Vender.png" />
+
+  </ItemGroup>
+
+</Project>

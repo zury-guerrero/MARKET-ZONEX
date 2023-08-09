@@ -1,0 +1,174 @@
+﻿<Window x:Class="MARKET_PLACE.Vistas.Registro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MARKET_PLACE.Vistas"
+        mc:Ignorable="d"
+        Title="Registro"
+        Height="600"
+        Width="1000"
+         WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        AllowsTransparency="True">
+
+    <Grid Background="#FFF9D1B3">
+
+        <Border Background="#e76f51"
+                Margin="0,0,0,562" Cursor="Hand"/>
+
+
+        <!--#region title-->
+        <TextBlock HorizontalAlignment="Left"
+                       Margin="389,56,0,0"
+                       TextWrapping="Wrap"
+                       Text="CREA TU CUENTA"
+                       VerticalAlignment="Top" 
+                       FontSize="24"
+                       FontFamily="Arial Rounded MT Bold"/>
+
+        <Image
+            Source="/Vistas/Creausuario.png" 
+                
+                 Cursor="Hand"
+                   Margin="-2,147,453,124"
+                   RenderTransformOrigin="0.5,0.5"
+                   Stretch="Fill" 
+                   IsEnabled="False">
+        </Image>
+        <!--#endregion-->
+
+        <!--#region user name-->
+        <TextBlock HorizontalAlignment="Left"
+                       Margin="599,152,0,0"
+                       TextWrapping="Wrap"
+                       Text="USER NAME"
+                       VerticalAlignment="Top" 
+                       FontFamily="Arial Rounded MT Bold"/>
+
+        <TextBox x:Name="TxtName"
+                 HorizontalAlignment="Left" 
+                 Margin="596,169,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top"
+                 Width="200"
+                  FontSize="13"
+                     FontWeight="Medium"
+                         
+                         Foreground="Black"
+                         CaretBrush="Black"
+                         BorderBrush="Black"
+                         BorderThickness="0,0,0,1"
+                         Height="28"
+                     Padding="30,0,0,0">
+            <TextBox.Background>
+                <ImageBrush ImageSource="C:\Users\zury\Downloads\MARKET-ZONE (2)\MARKET-ZONE (2)\MARKET-ZONE\Imagenes\Login\usuario.png"
+                                Stretch="Uniform"
+                                AlignmentX="Left">
+                </ImageBrush>
+            </TextBox.Background>
+
+        </TextBox>
+        <!--#endregion-->
+
+        <!--#region Usuario-->
+
+        <TextBlock HorizontalAlignment="Left"
+                       Margin="599,225,0,0"
+                       TextWrapping="Wrap"
+                       Text="USUARIO"
+                       VerticalAlignment="Top" 
+                       FontFamily="Arial Rounded MT Bold"/>
+
+        <TextBox x:Name="TxtUserName"
+                 HorizontalAlignment="Left"
+                 Margin="593,241,0,0"
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top"
+                 Width="200"
+                  FontSize="13"
+                     FontWeight="Medium"
+                         
+                         Foreground="Black"
+                         CaretBrush="Black"
+                         BorderBrush="Black"
+                         BorderThickness="0,0,0,1"
+                         Height="28"
+                     Padding="30,0,0,0" TextChanged="TxtUserName_TextChanged">
+            <TextBox.Background>
+                <ImageBrush ImageSource="C:\Users\zury\Downloads\MARKET-ZONE (2)\MARKET-ZONE (2)\MARKET-ZONE\Imagenes\Login\usuario.png"
+                                Stretch="Uniform"
+                                AlignmentX="Left">
+                </ImageBrush>
+            </TextBox.Background>
+
+        </TextBox>
+        <!--#endregion-->
+
+
+        <!--#region PASSWORD-->
+
+        <TextBlock HorizontalAlignment="Left"
+                       Margin="596,303,0,0"
+                       TextWrapping="Wrap"
+                       Text="CONTRASEÑA"
+                       VerticalAlignment="Top" 
+                       FontFamily="Arial Rounded MT Bold"/>
+
+
+
+        <PasswordBox x:Name="TxtPassword" 
+                 HorizontalAlignment="Left"
+                 Margin="594,319,0,0"
+                 VerticalAlignment="Top" 
+                 Width="200"
+                     FontSize="13"
+                     FontWeight="Medium"
+                         
+                         Foreground="Black"
+                         CaretBrush="Black"
+                         BorderBrush="Black"
+                         BorderThickness="0,0,0,1"
+                         Height="28"
+                     Padding="30,0,0,0">
+            <PasswordBox.Background>
+                <ImageBrush ImageSource="C:\Users\zury\Downloads\MARKET-ZONE (2)\MARKET-ZONE (2)\MARKET-ZONE\Imagenes\Login\bloquear.png"
+                                Stretch="Uniform"
+                                AlignmentX="Left">
+                </ImageBrush>
+            </PasswordBox.Background>
+        </PasswordBox>
+        <!--#endregion-->
+
+        <!--#region BTN AGREGAR USUARIOS-->
+        <Button x:Name="BtnAdd"
+                Content="crear cueenta"
+                HorizontalAlignment="Left"
+                Height="31"
+                Margin="595,381,0,0" 
+                VerticalAlignment="Top"
+                Width="200"
+                BorderBrush="Transparent"
+                Background="#e76f51"
+                Click="BtnAdd_Click"/>
+        <!--#endregion-->
+
+        <!--#region cerrar-->
+        <Button x:Name="BtCerrar"
+                            Grid.Column="2"
+                            Background="Transparent"
+                            BorderBrush="Transparent"
+                            Height="25"
+                            Width="25"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Top"
+                            Margin="0,5,5,0" 
+                            Cursor="Hand" Click="BtCerrar_Click">
+            <Image Source="/cerrar.png"
+                               Cursor="Hand"/>
+        </Button>
+        <!--#endregion-->
+        
+    </Grid>
+
+</Window>
